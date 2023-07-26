@@ -100,8 +100,8 @@ https://electrelic.com/electrelic/node/1317
 
 @junk_suga 氏
 SBCZ8002改で豊四季タイニーBASICを動かす  
-https://web.archive.org/web/20230119153223/https://www.ne.jp/asahi/suga/junkyard/sbc/sbcz8002/
-「ROM化その3 変数のfloat化」を
+https://web.archive.org/web/20230119153223/https://www.ne.jp/asahi/suga/junkyard/sbc/sbcz8002/  
+ROM化その3 変数のfloat化
 
 ## Z8002プログラムの改編
 バイナリデータをテキストデータ化してファームウェアの配列rom[]に格納するとZ8002で実行できます。
