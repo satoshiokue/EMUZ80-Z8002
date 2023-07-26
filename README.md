@@ -106,9 +106,14 @@ SBCZ8002 ROM r3 float EDITION
 
 OK
 ```
+
 MITライセンスのUniversal MonitorをEMUZ80-Z8002用に改変してhexファイル化しました。  
 Universal Monitor  
 https://electrelic.com/electrelic/node/1317
+
+@vintagechips 氏  
+電脳伝説：SBCZ8002の簡易モニタ  
+https://vintagechips.wordpress.com/2019/04/19/sbcz8002の簡易モニタ/  
 
 @junk_suga 氏  
 SBCZ8002改で豊四季タイニーBASICを動かす  
