@@ -22,12 +22,14 @@ https://github.com/satoshiokue/MEZZ8002
 emuz80_z8002.cをEMUZ80で配布されているフォルダemuz80.X下のmain.cと置き換えて使用してください。  
 ターゲットのPICを適切に変更してビルドしてください。  
 
-
 ## アドレスマップ
 ```
 Memory
 ROM   0x0000 - 0x7FFF 16Kbytes
 RAM   0x8000 - 0x9FFF 8Kbytes (0x8FFF 4Kbytes:PIC18F47Q43)
+      0xA000 - 0xBFFF GHOST
+      0xC000 - 0xDFFF GHOST
+      0xE000 - 0xFFFF GHOST
 
 I/O
 UART  0x0007   Data REGISTER
@@ -40,13 +42,52 @@ EMUZ80技術資料8ページにしたがってPICに適合するemuz80_z8002_Qxx
 またはArduino UNOを用いてPICを書き込みます。  
 https://github.com/satoshiokue/Arduino-PIC-Programmer
 
-Universal Monitor  
-PIC18F47Q43 emuz80_z8002_Q43.hex  
+PIC18F47Q43用ファームウェア： emuz80_z8002_Q43.hex  
+Universal Monitorが起動します。  
+mコマンドでMONZ8kモニタがコールドスタートします。CALL 0B00でUniversal Monitorがコールドスタートします。
 
-Universal Monitor + 豊四季タイニーBASIC  
-PIC18F47Q83 emuz80_z8002_Q8x.hex  
-PIC18F47Q84 emuz80_z8002_Q8x.hex  
+```
+MEZ8002 1.000MHz
 
+Universal Monitor Z8000
+] m
+
+MONZ8k Ver.1.0 SBCZ8002 Edition
+Zilog Z8000 Rush Monitor
+
+[8000]call 0b00
+
+Universal Monitor Z8000
+]
+```
+
+PIC18F47Q83/PIC18F47Q84用ファームウェア： emuz80_z8002_Q8x.hex  
+Universal Monitorが起動します。  
+mコマンドでMONZ8kモニタがコールドスタートします。CALL 4600でUniversal Monitorがコールドスタートします。
+MONZ8kモニタからbasicで豊四季タイニーBASIC(float版)が起動します。
+```
+MEZ8002 1.000MHz
+
+Universal Monitor Z8000
+] m
+
+MONZ8k Ver.1.0 r3 SBCZ8002 Edition
+Zilog Z8000 Rush Monitor + TOYOSHIKI Tiny BASIC
+
+[8000]call 4600
+
+Universal Monitor Z8000
+] m
+
+MONZ8k Ver.1.0 r3 SBCZ8002 Edition
+Zilog Z8000 Rush Monitor + TOYOSHIKI Tiny BASIC
+
+[8000]basic
+TOYOSHIKI TINY BASIC
+SBCZ8002 ROM r3 float EDITION
+
+OK
+```
 MITライセンスのUniversal MonitorをEMUZ80-Z8002用に改変してhexファイル化しました。  
 Universal Monitor  
 https://electrelic.com/electrelic/node/1317
@@ -54,7 +95,7 @@ https://electrelic.com/electrelic/node/1317
 @junk_suga 氏
 SBCZ8002改で豊四季タイニーBASICを動かす  
 https://web.archive.org/web/20230119153223/https://www.ne.jp/asahi/suga/junkyard/sbc/sbcz8002/
-ROM化その3 変数のfloat化
+「ROM化その3 変数のfloat化」を
 
 ## Z8002プログラムの改編
 バイナリデータをテキストデータ化してファームウェアの配列rom[]に格納するとZ8002で実行できます。
