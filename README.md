@@ -32,7 +32,6 @@ RAM   0x8000 - 0x9FFF 8Kbytes (0x8FFF 4Kbytes:PIC18F47Q43)
 I/O
 UART  0x0007   Data REGISTER
       0x0005   Control REGISTER
-
 ```
 
 ## PICプログラムの書き込み
@@ -41,10 +40,12 @@ EMUZ80技術資料8ページにしたがってPICに適合するemuz80_z8002_Qxx
 またはArduino UNOを用いてPICを書き込みます。  
 https://github.com/satoshiokue/Arduino-PIC-Programmer
 
+Universal Monitor  
+PIC18F47Q43 emuz80_z8002_Q43.hex  
+
 Universal Monitor + 豊四季タイニーBASIC  
-PIC18F47Q43 emuz80led_Q43.hex  
-PIC18F47Q83 emuz80led_Q8x.hex  
-PIC18F47Q84 emuz80led_Q8x.hex  
+PIC18F47Q83 emuz80_z8002_Q8x.hex  
+PIC18F47Q84 emuz80_z8002_Q8x.hex  
 
 MITライセンスのUniversal MonitorをEMUZ80-Z8002用に改変してhexファイル化しました。  
 Universal Monitor  
