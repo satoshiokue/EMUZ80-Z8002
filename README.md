@@ -98,7 +98,7 @@ MITライセンスのUniversal MonitorをEMUZ80-Z8002用に改変してhexファ
 Universal Monitor  
 https://electrelic.com/electrelic/node/1317
 
-@junk_suga 氏
+@junk_suga 氏  
 SBCZ8002改で豊四季タイニーBASICを動かす  
 https://web.archive.org/web/20230119153223/https://www.ne.jp/asahi/suga/junkyard/sbc/sbcz8002/  
 ROM化その3 変数のfloat化
