@@ -42,9 +42,12 @@ EMUZ80技術資料8ページにしたがってPICに適合するemuz80_z8002_Qxx
 またはArduino UNOを用いてPICを書き込みます。  
 https://github.com/satoshiokue/Arduino-PIC-Programmer
 
-PIC18F47Q43用ファームウェア： emuz80_z8002_Q43.hex  
-Universal Monitorが起動します。  
-mコマンドでMONZ8kモニタがコールドスタートします。CALL 0B00でUniversal Monitorがコールドスタートします。
+PIC18F47Q43用ファームウェア：  
+emuz80_z8002_Q43.hex  
+
+パワーオンでUniversal Monitorが起動します。  
+mコマンドでMONZ8kモニタがコールドスタートします。  
+CALL 0B00でUniversal Monitorがコールドスタートします。
 
 ```
 MEZ8002 1.000MHz
@@ -60,10 +63,13 @@ Zilog Z8000 Rush Monitor
 Universal Monitor Z8000
 ]
 ```
+  
+PIC18F47Q83/PIC18F47Q84用ファームウェア：  
+emuz80_z8002_Q8x.hex  
 
-PIC18F47Q83/PIC18F47Q84用ファームウェア： emuz80_z8002_Q8x.hex  
-Universal Monitorが起動します。  
-mコマンドでMONZ8kモニタがコールドスタートします。CALL 4600でUniversal Monitorがコールドスタートします。
+パワーオンでUniversal Monitorが起動します。  
+mコマンドでMONZ8kモニタがコールドスタートします。  
+CALL 4600でUniversal Monitorがコールドスタートします。  
 MONZ8kモニタからbasicで豊四季タイニーBASIC(float版)が起動します。
 ```
 MEZ8002 1.000MHz
