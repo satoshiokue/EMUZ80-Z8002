@@ -26,15 +26,15 @@ emuz80_z8002.cをEMUZ80で配布されているフォルダemuz80.X下のmain.c�
 ```
 Memory
 (PIC18F47Q83/PIC18F47Q84)
-ROM   0x0000 - 0x7FFF 16Kbytes
-RAM   0x8000 - 0x9FFF 8Kbytes
+ROM   0x0000 - 0x7FFF 16KBytes
+RAM   0x8000 - 0x9FFF 8KBytes
       0xA000 - 0xBFFF GHOST
       0xC000 - 0xDFFF GHOST
       0xE000 - 0xFFFF GHOST
 
 (PIC18F47Q43)
-ROM   0x0000 - 0x7FFF 16Kbytes
-RAM   0x8000 - 0x8FFF 4Kbytes
+ROM   0x0000 - 0x7FFF 16KBytes
+RAM   0x8000 - 0x8FFF 4KBytes
       0x9000 - 0x9FFF GHOST
       0xA000 - 0xAFFF GHOST
       0xB000 - 0xBFFF GHOST
