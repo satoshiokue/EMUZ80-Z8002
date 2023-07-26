@@ -118,7 +118,10 @@ https://vintagechips.wordpress.com/2019/04/19/sbcz8002の簡易モニタ/
 @junk_suga 氏  
 SBCZ8002改で豊四季タイニーBASICを動かす  
 https://web.archive.org/web/20230119153223/https://www.ne.jp/asahi/suga/junkyard/sbc/sbcz8002/  
-ROM化その3 変数のfloat化
+ROM化その3 変数のfloat化  
+
+### 注記:「SBCZ8002改で豊四季タイニーBASICを動かす」はSBCZ8002をRAM 32kBに拡張したシステム用のプログラムです。本機ではRAM容量不足が生じます。氏の功績をたたえ、無改造で収蔵いたします。  
+
 
 ## Z8002プログラムの改編
 バイナリデータをテキストデータ化してファームウェアの配列rom[]に格納するとZ8002で実行できます。
