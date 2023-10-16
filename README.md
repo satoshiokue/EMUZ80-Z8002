@@ -54,7 +54,7 @@ EMUZ80技術資料8ページにしたがってPICに適合するemuz80_z8002_Qxx
 またはArduino UNOを用いてPICを書き込みます。  
 https://github.com/satoshiokue/Arduino-PIC-Programmer
 
-### PIC18F47Q43用ファームウェア：  
+### PIC18F47Q43用ファームウェア
 emuz80_z8002_Q43.hex  
 
 ```
@@ -77,7 +77,7 @@ CALL 0B00でUniversal Monitorがコールドスタートします。
   
   
   
-### PIC18F47Q83/PIC18F47Q84用ファームウェア：  
+### PIC18F47Q83/PIC18F47Q84用ファームウェア
 emuz80_z8002_Q8x.hex  
 ```
 MEZ8002 1.000MHz
@@ -131,6 +131,47 @@ ROM化その3 変数のfloat化
 ```
 xxd -i -c16 foo.bin > foo.txt
 ```
+
+## 移植版 Nascom BASIC 搭載ファームウェア
+8080/Z80用Nascon BASICのソースファイルをZ8002用にコンバートして作成した Z8002 BASICとUniversal Monitorを搭載しました。  
+
+emuZ8002_UMONBAS_Q43.hex  
+emuZ8002_UMONBAS_Q8x.hex　　
+
+https://github.com/satoshiokue/Z8002_NASCOM_BASIC  
+
+### アドレスマップ  
+```
+Memory
+(PIC18F47Q83/PIC18F47Q84)
+ROM   0x0000 - 0x7FFF 16KBytes
+RAM   0x8000 - 0x8FFF 4KBytes  PIC18F47Q43
+RAM   0x8000 - 0x9FFF 8KBytes  PIC18F47Q83 / PIC18F47Q84
+
+I/O
+UART  0x0007   Data REGISTER
+      0x0005   Control REGISTER
+```
+
+```
+MEZZ8002 1.300MHz
+
+Universal Monitor Z8000
+] b
+
+Z80 Based Z8002 BASIC Ver 4.7b
+Copyright (C) 1978 by Microsoft
+3679 Bytes free
+Ok
+monitor
+
+Universal Monitor Z8000
+]
+```
+
+パワーオンでUniversal Monitorが起動します。  
+bコマンドでBASICが起動します。  
+BASICからmonitorコマンドでUniversal Monitorがコールドスタートします。  
 
 ## 参考）EMUZ80
 EUMZ80はZ80CPUとPIC18F47Q43のDIP40ピンIC2つで構成されるシンプルなコンピュータです。
