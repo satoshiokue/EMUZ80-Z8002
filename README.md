@@ -26,14 +26,14 @@ emuz80_z8002.cをEMUZ80で配布されているフォルダemuz80.X下のmain.c�
 ```
 Memory
 (PIC18F47Q83/PIC18F47Q84)
-ROM   0x0000 - 0x7FFF 16KBytes
+ROM   0x0000 - 0x7FFF
 RAM   0x8000 - 0x9FFF 8KBytes
       0xA000 - 0xBFFF GHOST
       0xC000 - 0xDFFF GHOST
       0xE000 - 0xFFFF GHOST
 
 (PIC18F47Q43)
-ROM   0x0000 - 0x7FFF 16KBytes
+ROM   0x0000 - 0x7FFF
 RAM   0x8000 - 0x8FFF 4KBytes
       0x9000 - 0x9FFF GHOST
       0xA000 - 0xAFFF GHOST
@@ -144,7 +144,7 @@ https://github.com/satoshiokue/Z8002_NASCOM_BASIC
 ```
 Memory
 (PIC18F47Q83/PIC18F47Q84)
-ROM   0x0000 - 0x7FFF 16KBytes
+ROM   0x0000 - 0x7FFF
 RAM   0x8000 - 0x8FFF 4KBytes  PIC18F47Q43
 RAM   0x8000 - 0x9FFF 8KBytes  PIC18F47Q83 / PIC18F47Q84
 
