@@ -18,6 +18,9 @@ AMD Z8002ADC
 ## メザニンボード
 https://github.com/satoshiokue/MEZZ8002  
 
+MEZZ8002専用プリント基板  
+https://store.shopping.yahoo.co.jp/orangepicoshop/pico-a-071.html  
+
 ## ファームウェア
 emuz80_z8002.cをEMUZ80で配布されているフォルダemuz80.X下のmain.cと置き換えて使用してください。  
 ターゲットのPICを適切に変更してビルドしてください。  
