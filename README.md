@@ -1,11 +1,8 @@
 # EMUZ80-Z8002
 電脳伝説さん(@vintagechips)のEMUZ80が出力するZ80 CPU信号をメザニンボードで組み替え、Z8002を動作させることができます。  
-LH8002とPIC18F47Q83の組み合わせで動作確認しています。
 
-![MEZ80LED](https://github.com/satoshiokue/EMUZ80-Z8002/blob/main/MEZZ8002.jpeg)
+![MEZZ8002](https://github.com/satoshiokue/EMUZ80-Z8002/blob/main/MEZZ8002.jpeg)
  
-ソースコードは電脳伝説さんのEMUZ80用main.cを元に改変してGPLライセンスに基づいて公開するものです。
-
 LH8002PとPIC18F47Q83の組み合わせで動作確認しています。  
 
 動作確認済みCPU  
